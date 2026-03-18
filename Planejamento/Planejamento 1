@@ -1,0 +1,39 @@
+Lista de funcionalidades necessárias
+
+Área do Cliente
+- Visualizar agenda disponível
+- Realizar agendamento de dia e horário
+- Selecionar o tipo de sessão fotográfica
+- Escolher entre uma, duas ou mais sessões, conforme disponibilidade
+- Informar dados pessoais para o agendamento
+- Receber confirmação do agendamento
+- Receber lembrete 1 dia antes da sessão
+- Cancelar agendamento com no mínimo 2 dias de antecedência
+- Visualizar detalhes da sessão agendada
+
+Tipos de Sessão
+- Ensaio de recém-nascido: duração de 2 horas
+- Ensaio de bebê: duração de 1 hora
+- Casamento: meio período ou período integral
+- Outros tipos de ensaio: duração definida pelo administrador
+
+Área do Administrador
+- Visualizar todos os agendamentos
+- Cadastrar, editar e excluir agendamentos
+- Cancelar agendamento a qualquer momento
+- Reagendar sessões
+- Editar data e horário da sessão
+- Alterar o tipo de sessão
+- Definir quantidade de sessões contratadas
+- Gerenciar disponibilidade da agenda
+- Cadastrar novos tipos de sessão
+- Definir a duração de cada tipo de sessão
+- Confirmar manualmente ou automaticamente os agendamentos
+
+Regras de Negócio
+- O cliente só pode cancelar com até 2 dias de antecedência
+- O administrador pode cancelar ou alterar agendamentos a qualquer momento
+- O sistema deve impedir agendamentos em horários já ocupados
+- A duração da sessão deve mudar conforme o tipo escolhido
+- O sistema deve enviar confirmação após o agendamento
+- O sistema deve enviar lembrete 1 dia antes da sessão
