@@ -1,0 +1,86 @@
+/* =============================================
+   DANNY — Auth
+============================================= */
+
+.auth-page {
+  min-height: 100vh;
+}
+
+.auth {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: var(--section-px);
+  background:
+    linear-gradient(rgba(10, 10, 10, 0.72), rgba(10, 10, 10, 0.92)),
+    radial-gradient(circle at 20% 10%, rgba(201, 185, 154, 0.16), transparent 28%),
+    var(--bg);
+}
+
+.auth__panel {
+  width: min(100%, 460px);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: clamp(2rem, 5vw, 3rem);
+}
+
+.auth__brand {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: 2.5rem;
+}
+
+.auth__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 6vw, 3.6rem);
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.auth__text,
+.auth__switch {
+  color: var(--text-muted);
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  margin: 2rem 0 1.25rem;
+}
+
+.auth-form__group {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.auth-form__group span,
+.auth-form__row,
+.auth-form__check {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.auth-form__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.auth-form__row a,
+.auth__switch a {
+  color: var(--accent);
+}
+
+.auth-form__check {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}

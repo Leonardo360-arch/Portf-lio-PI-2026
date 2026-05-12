@@ -1,0 +1,138 @@
+/* =============================================
+   DANNY — Responsive
+============================================= */
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+
+  .hero__image .placeholder {
+    min-height: 320px;
+  }
+
+  .sobre {
+    grid-template-columns: 1fr;
+  }
+
+  .contato {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .cenarios__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-sidebar {
+    position: static;
+    height: auto;
+  }
+
+  .admin-sidebar__nav {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .admin-sidebar__link {
+    text-align: center;
+  }
+
+  .admin-metrics,
+  .admin-form,
+  .request-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-table {
+    overflow-x: auto;
+  }
+
+  .admin-table__row {
+    min-width: 860px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav__links {
+    display: none;
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .sobre__stats {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .galeria__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .depoimento__card {
+    padding: 2rem 1.5rem;
+  }
+
+  .whatsapp-btn {
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+
+  .auth {
+    padding: 1rem;
+  }
+
+  .auth__panel {
+    padding: 1.5rem;
+  }
+
+  .auth-form__row,
+  .admin-topbar,
+  .admin-section__header,
+  .schedule-item {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .admin-sidebar__nav {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-topbar,
+  .admin-section__header,
+  .admin-history-tools {
+    display: grid;
+  }
+
+  .schedule-item {
+    grid-template-columns: 1fr;
+  }
+
+  .request-card__actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .admin-sort__button {
+    flex: 1 1 100%;
+    justify-content: space-between;
+  }
+
+  .admin-month {
+    grid-template-columns: 40px minmax(0, 1fr) 40px;
+  }
+
+  .admin-month__all {
+    grid-column: 1 / -1;
+  }
+}
