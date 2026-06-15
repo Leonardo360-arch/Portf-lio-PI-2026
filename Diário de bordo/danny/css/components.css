@@ -1,0 +1,139 @@
+.label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.placeholder {
+  background-color: var(--bg-card-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  padding: 1rem;
+  min-height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder::before,
+.placeholder::after {
+  content: '';
+  position: absolute;
+  background-color: var(--border);
+}
+
+.placeholder::before {
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  left: 0;
+  transform: rotate(-10deg);
+}
+
+.placeholder::after {
+  width: 1px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: rotate(-10deg);
+}
+
+.placeholder span {
+  position: relative;
+  z-index: 1;
+}
+
+.placeholder--sm {
+  min-height: 200px;
+}
+
+.placeholder--gal {
+  min-height: 220px;
+}
+
+.btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  border: 1px solid transparent;
+}
+
+.btn--primary {
+  background-color: var(--text);
+  color: var(--bg);
+}
+
+.btn--primary:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.btn--outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn--submit {
+  background-color: var(--text);
+  color: var(--bg);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.9rem 1.5rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.btn--submit:hover {
+  background-color: var(--accent-hover);
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  z-index: 200;
+  background-color: #25d366;
+  color: #fff;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.5);
+}
